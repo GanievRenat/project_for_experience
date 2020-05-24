@@ -1,0 +1,11 @@
+export 'app_bar_home.dart';
+export 'app_bar_default.dart';
+export 'slider_horizontal.dart';
+export 'search_product.dart';
+export 'my_flex_widget.dart';
+export 'tab_bar.dart';
+export 'products_flags.dart';
+export 'products_discount.dart';
+export 'products_price.dart';
+export 'products_item.dart';
+export 'like_button.dart';

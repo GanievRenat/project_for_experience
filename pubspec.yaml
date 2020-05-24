@@ -1,0 +1,42 @@
+name: templer
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flutter_swiper: ^1.1.6                # Слайдер
+  bubble_tab_indicator: ^0.1.4          # Внешний вид переключателя меню
+  flutter_staggered_grid_view: ^0.3.0   # ГридВью не стандартной высоты
+  cached_network_image: any             # Загрузка изображения с кэшом
+  font_awesome_flutter: ^8.8.1          # Набор иконок
+
+  flutter_bloc: ^4.0.0
+  equatable: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - asset/images/none_product.png
+
+  fonts:
+  - family: GoogleFontBold
+    fonts:
+    - asset: asset/fonts/GoogleSans-Bold.ttf
+
+  - family: GoogleFontMebium
+    fonts:
+    - asset: asset/fonts/GoogleSans-Medium.ttf
+
+  - family: GoogleFontRegular
+    fonts:
+    - asset: asset/fonts/GoogleSans-Regular.ttf
