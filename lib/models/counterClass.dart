@@ -1,13 +1,16 @@
 import 'package:equatable/equatable.dart';
 
-abstract class CounterClass extends Equatable {}
+// abstract class CounterClass extends Equatable {
+//   void add();
+// }
 
-class MyCounterClass extends CounterClass {
-  int _count = 0;
-  int get count => _count;
+class MyCounterClass {
+  //extends CounterClass {
+  int count = 0;
 
-  add() {
-    _count++;
+  @override
+  void add() {
+    count++;
   }
 
   @override

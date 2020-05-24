@@ -41,7 +41,7 @@ class _AppBarHomeState extends State<AppBarHome> {
                 );
               },
             ),
-            BlocBuilder<CounterBloc2, CounterClass>(
+            BlocBuilder<CounterBloc2, MyCounterClass>(
               builder: (context, state) {
                 if (state is MyCounterClass) {
                   return Center(

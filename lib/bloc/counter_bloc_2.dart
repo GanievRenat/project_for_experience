@@ -2,18 +2,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:templer/events/counter_events.dart';
 import 'package:templer/models/counterClass.dart';
 
-class CounterBloc2 extends Bloc<CounterEvent, CounterClass> {
-  MyCounterClass myCounterClass = MyCounterClass();
+class CounterBloc2 extends Bloc<CounterEvent, MyCounterClass> {
+  @override
+  MyCounterClass get initialState => MyCounterClass();
 
   @override
-  CounterClass get initialState => myCounterClass;
+  Stream<MyCounterClass> mapEventToState(CounterEvent event) async* {
+    var newState = MyCounterClass()..count = state.count;
 
-  @override
-  Stream<CounterClass> mapEventToState(CounterEvent event) async* {
-    yield myCounterClass.add();
     if (event is IncrementEvent) {
-      myCounterClass.add();
-      yield myCounterClass;
+      newState.add();
+      yield newState;
     }
     if (event is DecrementEvent) {
       yield state;

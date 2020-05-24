@@ -85,7 +85,7 @@ class _NewsScreenState extends State<NewsScreen> {
                 },
                 child: Container(
                   color: AppColors.grayChateau,
-                  child: BlocBuilder<CounterBloc2, CounterClass>(
+                  child: BlocBuilder<CounterBloc2, MyCounterClass>(
                     bloc: counterBloc,
                     builder: (context, state) {
                       if (state is MyCounterClass) {
